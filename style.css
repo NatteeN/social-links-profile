@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(resource/social-links-profile-main/assets/fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
+}
+
+:root {
+    --font-family-default: 'Inter';
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+
+    --fs-100: 0.5rem;
+    --fs-200: 0.75rem;
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.75rem;
+    --fs-800: 2rem;
+    --fs-900: 5rem;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+body {
+    display: flex;
+    background-color: #141414;
+    font-family: var(--font-family-default);
+    font-size: var(--fs-300);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #1F1F1F;
+    padding: 2.5rem;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.profile img {
+    height: 80px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: .1rem;
+}
+
+.profile h1 {
+    font-size: var(--fs-600);
+    color: white;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+p.quote {
+    font-size: .9rem;
+    color: white;
+    font-weight: 250;
+    margin: .5rem 0 0 0;
+}
+
+p.location {
+    color: #C4F82A;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.grid-flow {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.grid-flow[data-spacing="large"] {
+    gap: 1.5rem;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #333333;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: .85rem;
+    padding: 15px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #C4F82A;
+    color: black;
+}
+
+.grid-buttons {
+    display: grid;
+    align-content: start;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+}
